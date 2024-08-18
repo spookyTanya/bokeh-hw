@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>task 2</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="b429f2f9-2cd8-4142-a564-46f5dbe6e8cf" data-root-id="p1039" style="display: contents;"></div>
+  
+    <script type="application/json" id="ce7076b7-114d-41f7-8327-6855fad352fe">
+      {"0dfbd96d-c3ae-43f4-9ac3-ce4cd1910484":{"version":"3.5.1","title":"Bokeh Application","roots":[{"type":"object","name":"Column","id":"p1039","attributes":{"children":[{"type":"object","name":"CheckboxGroup","id":"p1037","attributes":{"js_property_callbacks":{"type":"map","entries":[["change:active",[{"type":"object","name":"CustomJS","id":"p1038","attributes":{"args":{"type":"map","entries":[["source",{"type":"object","name":"ColumnDataSource","id":"p1001","attributes":{"selected":{"type":"object","name":"Selection","id":"p1002","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1003"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAA"},"shape":[6],"dtype":"int32","order":"little"}],["Pclass",{"type":"ndarray","array":{"type":"bytes","data":"AQAAAAEAAAACAAAAAgAAAAMAAAADAAAA"},"shape":[6],"dtype":"int32","order":"little"}],["Sex",{"type":"ndarray","array":["female","male","female","male","female","male"],"shape":[6],"dtype":"object","order":"little"}],["SurvivalRate",{"type":"ndarray","array":{"type":"bytes","data":"ntBMP9xf2D9UJo3Gk0fXP/4cQvsHGtk/b6k/y4wq2D95D8lioAPaP4ZZu0e1edg/"},"shape":[6],"dtype":"float64","order":"little"}],["Color",{"type":"ndarray","array":["#CEB1BE","#A3E7FC","#CEB1BE","#A3E7FC","#CEB1BE","#A3E7FC"],"shape":[6],"dtype":"object","order":"little"}],["Pclass_Sex",{"type":"ndarray","array":[["1","female"],["1","male"],["2","female"],["2","male"],["3","female"],["3","male"]],"shape":[6],"dtype":"object","order":"little"}]]}}}],["original_source",{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAA"},"shape":[6],"dtype":"int32","order":"little"}],["Pclass",{"type":"ndarray","array":{"type":"bytes","data":"AQAAAAEAAAACAAAAAgAAAAMAAAADAAAA"},"shape":[6],"dtype":"int32","order":"little"}],["Sex",{"type":"ndarray","array":["female","male","female","male","female","male"],"shape":[6],"dtype":"object","order":"little"}],["SurvivalRate",{"type":"ndarray","array":{"type":"bytes","data":"ntBMP9xf2D9UJo3Gk0fXP/4cQvsHGtk/b6k/y4wq2D95D8lioAPaP4ZZu0e1edg/"},"shape":[6],"dtype":"float64","order":"little"}],["Color",{"type":"ndarray","array":["#CEB1BE","#A3E7FC","#CEB1BE","#A3E7FC","#CEB1BE","#A3E7FC"],"shape":[6],"dtype":"object","order":"little"}],["Pclass_Sex",{"type":"ndarray","array":[["1","female"],["1","male"],["2","female"],["2","male"],["3","female"],["3","male"]],"shape":[6],"dtype":"object","order":"little"}]]}],["p",{"type":"object","name":"Figure","id":"p1006","attributes":{"x_range":{"type":"object","name":"FactorRange","id":"p1004","attributes":{"factors":[["1","female"],["1","male"],["2","female"],["2","male"],["3","female"],["3","male"]]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1008"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1016"},"y_scale":{"type":"object","name":"LinearScale","id":"p1017"},"title":{"type":"object","name":"Title","id":"p1009","attributes":{"text":"Survival Rates by Class and Gender"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1034","attributes":{"data_source":{"id":"p1001"},"view":{"type":"object","name":"CDSView","id":"p1035","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1036"}}},"glyph":{"type":"object","name":"VBar","id":"p1031","attributes":{"x":{"type":"field","field":"Pclass_Sex"},"width":{"type":"value","value":0.4},"top":{"type":"field","field":"SurvivalRate"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"field","field":"Color"},"hatch_color":{"type":"field","field":"Color"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1032","attributes":{"x":{"type":"field","field":"Pclass_Sex"},"width":{"type":"value","value":0.4},"top":{"type":"field","field":"SurvivalRate"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"Color"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"field","field":"Color"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1033","attributes":{"x":{"type":"field","field":"Pclass_Sex"},"width":{"type":"value","value":0.4},"top":{"type":"field","field":"SurvivalRate"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"Color"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"field","field":"Color"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1015","attributes":{"tools":[{"type":"object","name":"HoverTool","id":"p1005","attributes":{"renderers":"auto","tooltips":"Survival rate for @Sex from @Pclass class is @SurvivalRate"}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1023","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1024","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1025"},"axis_label":"Survival Rate","major_label_policy":{"type":"object","name":"AllLabels","id":"p1026"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1018","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1019"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1020"},"axis_label":"Pclass - Sex","major_label_policy":{"type":"object","name":"AllLabels","id":"p1021"}}}],"center":[{"type":"object","name":"Grid","id":"p1022","attributes":{"axis":{"id":"p1018"}}},{"type":"object","name":"Grid","id":"p1027","attributes":{"dimension":1,"axis":{"id":"p1023"}}}]}}],["checkbox_group",{"id":"p1037"}]]},"code":"\n               var active = checkbox_group.active.map(i =&gt; checkbox_group.labels[i]);\n               var original_data = original_source;\n               var new_data = { 'Pclass_Sex': [], 'SurvivalRate': [], 'Color': [], 'Sex': [], 'Pclass': [] };\n\n               for (var i = 0; i &lt; original_data['Sex'].length; i++) {\n                   if (active.includes(original_data['Sex'][i])) {\n                       new_data['Pclass_Sex'].push(original_data['Pclass_Sex'][i]);\n                       new_data['SurvivalRate'].push(original_data['SurvivalRate'][i]);\n                       new_data['Color'].push(original_data['Color'][i]);\n                       new_data['Sex'].push(original_data['Sex'][i]);\n                       new_data['Pclass'].push(original_data['Pclass'][i]);\n                   }\n               }\n\n               source.data = new_data;\n               p.x_range.factors = new_data['Pclass_Sex'];\n               source.change.emit();\n       "}}]]]},"labels":["male","female"],"active":[0,1]}},{"id":"p1006"}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('ce7076b7-114d-41f7-8327-6855fad352fe').textContent;
+              const render_items = [{"docid":"0dfbd96d-c3ae-43f4-9ac3-ce4cd1910484","roots":{"p1039":"b429f2f9-2cd8-4142-a564-46f5dbe6e8cf"},"root_ids":["p1039"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

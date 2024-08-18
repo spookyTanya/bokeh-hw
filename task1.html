@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>task 1</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="cfca566a-c13a-4180-b9f1-0dd16e56e2a5" data-root-id="p1041" style="display: contents;"></div>
+  
+    <script type="application/json" id="d568e0a6-2010-4bd0-afd3-38b7cb39aaf6">
+      {"ddb0302f-1633-4a0f-9390-d952100ba1de":{"version":"3.5.1","title":"Bokeh Application","roots":[{"type":"object","name":"Column","id":"p1041","attributes":{"children":[{"type":"object","name":"CheckboxGroup","id":"p1039","attributes":{"js_property_callbacks":{"type":"map","entries":[["change:active",[{"type":"object","name":"CustomJS","id":"p1040","attributes":{"args":{"type":"map","entries":[["source",{"type":"object","name":"ColumnDataSource","id":"p1001","attributes":{"selected":{"type":"object","name":"Selection","id":"p1002","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1003"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAA=="},"shape":[4],"dtype":"int32","order":"little"}],["AgeGroup",{"type":"ndarray","array":["Adult","Child","Senior","Young Adult"],"shape":[4],"dtype":"object","order":"little"}],["SurvivalRate",{"type":"ndarray","array":{"type":"bytes","data":"ElhvzEAS2D+uYxTnOkbhP0YXXXTRRbc/N4amO9hv1T8="},"shape":[4],"dtype":"float64","order":"little"}],["Color",{"type":"ndarray","array":["#A3E7FC","#34344A","#EDCB96","#80475E"],"shape":[4],"dtype":"object","order":"little"}]]}}}],["original_source",{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAA=="},"shape":[4],"dtype":"int32","order":"little"}],["AgeGroup",{"type":"ndarray","array":["Adult","Child","Senior","Young Adult"],"shape":[4],"dtype":"object","order":"little"}],["SurvivalRate",{"type":"ndarray","array":{"type":"bytes","data":"ElhvzEAS2D+uYxTnOkbhP0YXXXTRRbc/N4amO9hv1T8="},"shape":[4],"dtype":"float64","order":"little"}],["Color",{"type":"ndarray","array":["#A3E7FC","#34344A","#EDCB96","#80475E"],"shape":[4],"dtype":"object","order":"little"}]]}],["p",{"type":"object","name":"Figure","id":"p1005","attributes":{"x_range":{"type":"object","name":"FactorRange","id":"p1015","attributes":{"factors":["Adult","Child","Senior","Young Adult"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1007"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1016"},"y_scale":{"type":"object","name":"LinearScale","id":"p1017"},"title":{"type":"object","name":"Title","id":"p1008","attributes":{"text":"Survival rates across age groups"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1034","attributes":{"data_source":{"id":"p1001"},"view":{"type":"object","name":"CDSView","id":"p1035","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1036"}}},"glyph":{"type":"object","name":"VBar","id":"p1031","attributes":{"x":{"type":"field","field":"AgeGroup"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"SurvivalRate"},"line_color":{"type":"field","field":"Color"},"fill_color":{"type":"field","field":"Color"},"hatch_color":{"type":"field","field":"Color"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1032","attributes":{"x":{"type":"field","field":"AgeGroup"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"SurvivalRate"},"line_color":{"type":"field","field":"Color"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"Color"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"field","field":"Color"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1033","attributes":{"x":{"type":"field","field":"AgeGroup"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"SurvivalRate"},"line_color":{"type":"field","field":"Color"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"Color"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"field","field":"Color"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1014","attributes":{"tools":[{"type":"object","name":"HoverTool","id":"p1004","attributes":{"renderers":"auto","tooltips":"Survival rate of @AgeGroup group is @SurvivalRate"}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1023","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1024","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1025"},"axis_label":"Survival Rate","major_label_policy":{"type":"object","name":"AllLabels","id":"p1026"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1018","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1019"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1020"},"axis_label":"Age groups","major_label_policy":{"type":"object","name":"AllLabels","id":"p1021"}}}],"center":[{"type":"object","name":"Grid","id":"p1022","attributes":{"bounds":[2,4],"axis":{"id":"p1018"}}},{"type":"object","name":"Grid","id":"p1027","attributes":{"dimension":1,"axis":{"id":"p1023"},"band_fill_color":"#65743A","band_fill_alpha":0.1}},{"type":"object","name":"Legend","id":"p1037","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p1038","attributes":{"label":{"type":"field","field":"AgeGroup"},"renderers":[{"id":"p1034"}]}}]}}]}}],["checkbox_group",{"id":"p1039"}]]},"code":"\n            var active = checkbox_group.active.map(i =&gt; checkbox_group.labels[i]);\n            var original_data = original_source;\n            var new_data = { 'AgeGroup': [], 'SurvivalRate': [], 'Color': [] };\n\n            for (var i = 0; i &lt; original_data['AgeGroup'].length; i++) {\n                if (active.includes(original_data['AgeGroup'][i])) {\n                    new_data['AgeGroup'].push(original_data['AgeGroup'][i]);\n                    new_data['SurvivalRate'].push(original_data['SurvivalRate'][i]);\n                    new_data['Color'].push(original_data['Color'][i]);\n                }\n            }\n\n            source.data = new_data;\n            p.x_range.factors = new_data['AgeGroup']; // Update the x-axis factors\n            source.change.emit();\n    "}}]]]},"labels":["Young Adult","Adult","Child","Senior"],"active":[0,1,2,3]}},{"id":"p1005"}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('d568e0a6-2010-4bd0-afd3-38b7cb39aaf6').textContent;
+              const render_items = [{"docid":"ddb0302f-1633-4a0f-9390-d952100ba1de","roots":{"p1041":"cfca566a-c13a-4180-b9f1-0dd16e56e2a5"},"root_ids":["p1041"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
